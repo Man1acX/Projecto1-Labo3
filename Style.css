@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     width: 100%;
     display: flex;
@@ -11,8 +13,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    margin: 0;
-    padding: 0;
 }
 
 header{
@@ -58,7 +58,6 @@ a{
     color: #2ac216;
     text-decoration: none;
 }
-
 a:hover{
     color: black;
 }
@@ -70,10 +69,12 @@ a:hover{
     justify-content: space-evenly;
     padding-top: 100px;
 }
+
 .product-container{
 
     margin-top: 100px;  
 }
+
 .product-card{
     margin: 20px;
     display: flex;
@@ -89,10 +90,12 @@ a:hover{
     -o-border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0);
 }
+
 .info-container{
     position: relative;
     overflow: hidden;
 }
+
 .product-info{
    display: none;
    background-color: rgba(0,0,0,0.7);
@@ -110,6 +113,7 @@ a:hover{
    box-sizing: border-box;
    z-index: 1;
 }
+
 .product-img{
     height: 250px;
     display: flex;
@@ -121,6 +125,7 @@ a:hover{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
 .product-img img{
     width: 50%;
     border-radius: 8px;
@@ -129,31 +134,27 @@ a:hover{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
 .product-details{
     padding: 20px;
 }
-.detail-top{
+
+.details-top{
     width: 100%;
     display: inline-flex;
 }
+
 .product-tittle{
     font-size: 20px;
     font-weight: bold;
     color: #333;
 }
-.product-info{
-    font-size: 10px;
-    color: #2ac216;
-    margin-bottom: 10px;
-    display: none;
-}
-.button-info:hover + .product-details .product-info{
-    display: block;
-}
+
 .product-price{
     font-size: 15px;
     font-weight: bold;
 }
+
 .buttons{
     margin-top: 10px;
     width: 100%;
@@ -161,6 +162,7 @@ a:hover{
     align-items: center;
     justify-content: space-between;
 }
+
 .button-buy{
     background-color: #2ac216;
     color: #fff;
@@ -178,9 +180,11 @@ a:hover{
     -o-transition: background-color 0.3s ease;
     font-weight: bold;
 }
+
 .button-info:hover , .button-buy:hover{
     background-color: black;
 }
+
 .rayas{
     display: none;
     width: 20px;
@@ -200,7 +204,6 @@ a:hover{
     .product-card {
         width: 350px;
     }
-
  }
  @media screen and (max-width: 400px) {
     nav ul{
