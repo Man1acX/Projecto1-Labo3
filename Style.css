@@ -1,0 +1,222 @@
+body{
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0);
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+}
+
+header{
+    background-color: #333;
+    color: #2ac216;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.content-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Company-name img{
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 200px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+a{
+    color: #2ac216;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.product-container{
+
+    margin-top: 100px;  
+}
+.product-card{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0);
+}
+.info-container{
+    position: relative;
+    overflow: hidden;
+}
+.product-info{
+   display: none;
+   background-color: rgba(0,0,0,0.7);
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   box-sizing: border-box;
+   z-index: 1;
+}
+.product-img{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.product-img img{
+    width: 50%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.product-details{
+    padding: 20px;
+}
+.detail-top{
+    width: 100%;
+    display: inline-flex;
+}
+.product-tittle{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.product-info{
+    font-size: 10px;
+    color: #2ac216;
+    margin-bottom: 10px;
+    display: none;
+}
+.button-info:hover + .product-details .product-info{
+    display: block;
+}
+.product-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+.buttons{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-buy{
+    background-color: #2ac216;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.button-info:hover , .button-buy:hover{
+    background-color: black;
+}
+.rayas{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    nav ul{
+        flex-direction: column;
+    }
+    .content-top{
+        flex-direction: column;
+    }
+ }
+@media screen and (max-width: 600px) {
+    .product-card {
+        width: 350px;
+    }
+
+ }
+ @media screen and (max-width: 400px) {
+    nav ul{
+        display: none;
+    }
+    .rayas{
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        display: flex;    
+    }
+    .product-card{
+        width: 250px;
+    }
+ }
+ @media screen and (max-width: 290px){
+    .product-container{
+        width: 100%;
+        display: flex;
+    }
+ }
